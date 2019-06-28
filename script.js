@@ -20,11 +20,13 @@ function displayResults(responseJson) {
     const name = park.name;
     const url = park.url;
     const address = park.directionsInfo;
+    const states = park.states;
 
     html += `
         <li><h3>${name}</h3>
-          <p>Description: ${description}</p>
+          <p>Description : ${description}</p>
           <p>URL : <a href="${url}">${url}</a></p>
+          <p>STATE : ${states}</p>
           <p>Address: ${address}</p>
         </li>`;
   }
